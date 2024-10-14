@@ -1,3 +1,4 @@
+import path from 'path';
 import { fileURLToPath, URL } from 'node:url'
 
 import { defineConfig } from 'vite'
@@ -8,9 +9,10 @@ export default defineConfig({
   plugins: [
     vue(),
   ],
+  base: '/<devops-feedback.io>/',
   resolve: {
     alias: {
-      '@': fileURLToPath(new URL('./src', import.meta.url))
+      '@': path.resolve(__dirname, 'src'),
     }
   }
 })
