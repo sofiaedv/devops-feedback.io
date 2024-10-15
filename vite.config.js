@@ -7,7 +7,7 @@ export default defineConfig({
   plugins: [
     vue(),
   ],
-  base: '/<devops-feedback.io>/',
+  base: '/devops-feedback.io/',
   resolve: {
     alias: {
       '@': path.resolve(__dirname, 'src'),
